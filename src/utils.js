@@ -37,11 +37,11 @@ export function tmpBuildPath(appPath, api) {
 
 export function names(config) {
   const name = config.app.name.toLowerCase();
-  const name = config.app.envName.toLowerCase();
+  const envName = config.app.envName.toLowerCase();
 
   return {
     bucket: `mup-${name}`,
-    environment: `mup-env-${envName}`,
+    environment: `${envName}`,
     app: `${name}`,
     bundlePrefix: `mup/bundles/${name}/`,
     instanceProfile: 'aws-elasticbeanstalk-ec2-role',
