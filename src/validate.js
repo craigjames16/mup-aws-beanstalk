@@ -2,6 +2,7 @@ import joi from 'joi';
 
 const schema = joi.object().keys({
   name: joi.string().min(1).required(),
+  envName: joi.string().min(1).required(),
   path: joi.string().min(1).required(),
   type: joi.string().required(),
   buildOptions: joi.object().keys({

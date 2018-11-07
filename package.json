@@ -1,5 +1,5 @@
 {
-  "name": "mup-aws-beanstalk",
+  "name": "mup-aws-beanstalk-bereda",
   "version": "0.6.1",
   "description": "Deploy apps to AWS Elastic Beanstalk using Meteor Up",
   "main": "index.js",
